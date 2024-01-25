@@ -20,7 +20,7 @@ createApp({
         })
         .catch((err) => {
           alert(err.response.data.message);
-          window.location = 'login.html';
+          window.location = './login.html';
         })
     },
     getData() {
@@ -34,7 +34,7 @@ createApp({
           alert(err.response.data.message);
         })
     },
-    getproduct(item) {
+    getProduct(item) {
       this.product = item;
     }, 
   },

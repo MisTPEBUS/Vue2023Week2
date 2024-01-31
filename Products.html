@@ -109,14 +109,14 @@
                 </div>
               </div>
             </div>
-           <template v-for="item in product.imagesUrl">
+           <template v-for="img in product.imagesUrl" :key="img">
             
             <img 
             :class="{ 'zoomed': 0 }"
             @mouseover="isHovered = true"
             @mouseout="isHovered = false" 
-            :src="item" alt="附圖"
-            v-if="item!='' "
+            :src="img" alt="附圖"
+            v-if="img"
             class="images m-2">
           </template>
           </template>
